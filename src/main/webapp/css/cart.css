@@ -1,0 +1,12 @@
+.btn-submit {
+	background: orange;
+	color: white;
+	padding : 5px 12px;
+	font-weight: bold;
+	
+}
+.danger {
+	color: red !important;
+	font-weight: bold;
+	text-decoration: none !important;
+}

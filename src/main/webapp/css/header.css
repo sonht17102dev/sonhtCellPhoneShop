@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Header/Blog Title */
+.header {
+	padding: 30px;
+	height: 200px;
+	text-align: center;
+	background-color: #222F3C;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	float: left;
+	width: 100%;
+}
+
+.header h1 {
+	font-size: 50px;
+	color: white;
+}
+
+.header h2 {
+	color: #1BA4D6;
+}
+
+/* Style the top navigation bar */
+div .topnav {
+	background-color: #293847;
+	color: black;
+	height: 50px;
+}
+
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	height: 50px;
+	font-weight: bold;
+	background-color: #293847;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #293847;
+	color: orange;
+}
+
+.left-header {
+	float: left;
+	width: 25%;
+}
+
+.right-header {
+	float: left;
+	width: 75%;
+	height: 110px;
+	position: relative;
+	left: 100px;
+	top: 50px;
+}
+
+.form-search {
+	float: left;
+}
+
+.search-bar {
+	width: 600px;
+	height: 52px;
+	font-size: large;
+	font-weight: bold;
+}
+.button-search:hover, .button-search:focus {
+	font-family: none;
+	background-color: green !important;
+}
+
+.dropbtn {
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	height: 52px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+}
+
+.dropdown {
+	float: left;
+	height: 52px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #222F3C;
+	min-width: 200px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	color: orange;
+}
+
+.show {
+	display: block;
+}
+@media screen and (max-width: 1150px) {
+	.button-search, .dropdown{
+		display: none;
+	}
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 991px) {
+	.header, .left-header, .right-header, .form-search, .search-bar{
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+	.header {
+	text-align : left;
+	}
+	.left-header {
+		text-align: center;
+	}
+	.right-header {
+		position: initial;
+		left: 0;
+		top: 0;
+	}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+	div .topnav {
+		height: auto;
+	}
+}
+@media screen and (max-width: 500px) {
+	.topnav a {
+		float: none;
+		width: 100%;
+	}
+}
