@@ -93,7 +93,7 @@ public class LoginServlet extends HttpServlet {
 				session.setAttribute("acc", acc);
 				session.setAttribute("user", user);
 				request.getRequestDispatcher("HomeController").forward(request, response);
-			} else if (user != null && user.equals(acc.getUsr()) && password.equalsIgnoreCase(acc.getPwd()) && acc.getRole() == 0) {
+			} else if (user != null && user.equals(acc.getUsr()) && password.equalsIgnoreCase(acc.getPwd()) && acc.getRole() == 2) {
 				session.setAttribute("acc", acc);
 				session.setAttribute("user", "Welcome " + acc.getName());
 				session.setAttribute("listAccount", list);
